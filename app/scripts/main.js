@@ -29,12 +29,48 @@ vicToria.random = function(min, max) {
   };
   console.log(vicToria.random(45))
 
-/* Function Size*/
+  /*Get current time*/
+  var vic= {};
 
-v.size = function(list){
+  vic.now = function(arr) {
+    return new Date().getTime();
+  };
+
+/*Greeting function*/
+
+vic.greeting =
+/* Function Size*/
+var vic = {};
+
+vic.size = function(list){
   if (list == null) return false;
   console.log(list.length);
 };
+
+/*map function function will return new array
+takes two parameters
+1. a list
+2. a callback, function */
+
+var vic = {};
+var list = ['tim', 'phil', 'bill'];
+
+vic.map = function(list, callback) {
+  if(ArrayisArray(list)) {
+    if(list.length > 0){
+      var results = []; i;
+      for (i = 0; i< list.length; i++){
+        results[i] = callback(list[i]);
+  }
+
+  return results;
+}
+return [];
+} else{
+  return console.log('this is not an array');
+}
+};
+
 
 /*_.Object Working in group*/
 
