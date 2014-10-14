@@ -18,16 +18,16 @@ bob.each(['videos','cheese','wine'],function(foo){
 */
 
 /*Example from Tim, writing random function*/
-var vicToria = {};
+var victoria = {};
 
-vicToria.random = function(min, max) {
+victoria.random = function(min, max) {
     if (max == null) {
       max = min;
       min = 0;
     }
     return min+Math.floor(Math.random() * (max - min + 1));
   };
-  console.log(vicToria.random(45))
+  console.log(victoria.random(45))
 
   /*Get current time*/
   var vic= {};
@@ -40,7 +40,7 @@ vicToria.random = function(min, max) {
 
 vic.greeting =
 /* Function Size*/
-var vic = {};
+
 
 vic.size = function(list){
   if (list == null) return false;
