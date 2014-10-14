@@ -18,23 +18,59 @@ bob.each(['videos','cheese','wine'],function(foo){
 */
 
 /*Example from Tim, writing random function*/
-var vicToria = {};
+var victoria = {};
 
-vicToria.random = function(min, max) {
+victoria.random = function(min, max) {
     if (max == null) {
       max = min;
       min = 0;
     }
     return min+Math.floor(Math.random() * (max - min + 1));
   };
-  console.log(vicToria.random(45))
+  console.log(victoria.random(45))
 
+  /*Get current time*/
+  var vic= {};
+
+  vic.now = function(arr) {
+    return new Date().getTime();
+  };
+
+/*Greeting function*/
+
+vic.greeting =
 /* Function Size*/
 
-v.size = function(list){
+
+vic.size = function(list){
   if (list == null) return false;
   console.log(list.length);
 };
+
+/*map function function will return new array
+takes two parameters
+1. a list
+2. a callback, function */
+
+var vic = {};
+var list = ['tim', 'phil', 'bill'];
+
+vic.map = function(list, callback) {
+  if(ArrayisArray(list)) {
+    if(list.length > 0){
+      var results = []; i;
+      for (i = 0; i< list.length; i++){
+        results[i] = callback(list[i]);
+  }
+
+  return results;
+}
+return [];
+} else{
+  return console.log('this is not an array');
+}
+};
+
 
 /*_.Object Working in group*/
 
