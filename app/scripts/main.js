@@ -1,9 +1,9 @@
 
 // Function Each
 
-var bob = {};
+var vic = {};
 
-bob.each = function(list,ears){
+vic.each = function(list,ears){
   var top = list.length
   for(var index = 0;index < top;index = index +1){
     var item = list[index]
@@ -16,29 +16,47 @@ bob.each(['videos','cheese','wine'],function(foo){
   console.log(foo.length)
 });
 */
+var vic = new Date();
+var time = d.getHours();
+
+  if (time < 12) {
+    document.write("Early morning!");
+    }
+  if (time > 12)
+    {
+    document.write("Afternoon Time");
+    }
+  if (time == 12)
+    {
+    document.write("Lunch Time");
+    }
+
+/*Get current time*/
+var vic= {};
+
+vic.now = function(arr) {
+  return new Date().getTime();
+};
+
+/*Greeting function*/
+
+
 
 /*Example from Tim, writing random function*/
 var victoria = {};
 
-victoria.random = function(min, max) {
+vic.random = function(min, max) {
     if (max == null) {
       max = min;
       min = 0;
     }
     return min+Math.floor(Math.random() * (max - min + 1));
   };
-  console.log(victoria.random(45))
 
-  /*Get current time*/
-  var vic= {};
 
-  vic.now = function(arr) {
-    return new Date().getTime();
-  };
 
-/*Greeting function*/
 
-vic.greeting =
+
 /* Function Size*/
 
 
