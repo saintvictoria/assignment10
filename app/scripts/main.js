@@ -17,7 +17,7 @@ bob.each(['videos','cheese','wine'],function(foo){
 });
 */
 var vic = new Date();
-var time = d.getHours();
+var time = vic.getHours();
 
   if (time < 12) {
     document.write("Early morning!");
