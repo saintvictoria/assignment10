@@ -16,8 +16,8 @@ vic.now = function(arr) {
   return new Date().getTime();
     };
 
-var vic = new Date();
-var time = vic.getHours();
+vic.today = new Date();
+var time = vic.today.getHours();
 
   if (time < 12) {
     document.write("Early morning!");
@@ -78,21 +78,20 @@ return [];
 
 var ironYard = ["Tim","Wendy","Richard", "Chelsea", "Emory", "Victoria", "John", "Joanna","Max"];
 var age = ["30yrs", "25yrs", "24yrs", "23yrs", "22yrs", "43yrs", "29yrs", "35yrs", "27yrs"];
-var vic=[];
 
-vic.object = function( ironYard, age) {
-    if (ironYard == null) return {};
+vic.object = function( names, ages) {
+    if (names == null) return {};
     var result = {};
 
-    for (var i = 0, length = ironYard.length; i < length; i++) {
-      if (age) {
+    for (var i = 0, length = names.length; i < length; i++) {
+      if (ages) {
 
-        result[ironYard[i]] = age[i];
+        result[names[i]] = ages[i];
       }
 
 
       else {
-        result[ironYard[i][0]] = ironYard[i][3];
+        result[names[i][0]] = names[i][3];
       }
     }
     return result;
