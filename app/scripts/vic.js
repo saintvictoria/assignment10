@@ -1,9 +1,9 @@
 
 // Function Each
 
-var bet = {};
+var vic = {};
 
-bet.each = function(list,ears){
+vic.each = function(list,ears){
   var top = list.length
   for(var index = 0;index < top;index = index +1){
     var item = list[index]
@@ -11,12 +11,12 @@ bet.each = function(list,ears){
 
   }
 };
-/*
-bob.each(['videos','cheese','wine'],function(foo){
-  console.log(foo.length)
-});
-*/
-var vic = {};
+
+vic.now = function(arr) {
+  return new Date().getTime();
+    };
+
+var vic = new Date();
 var time = vic.getHours();
 
   if (time < 12) {
@@ -24,32 +24,22 @@ var time = vic.getHours();
     }
   if (time > 12)
     {
-    document.write("Afternoon Time");
+    alert("Nap Time");
     }
   if (time == 12)
     {
     document.write("Lunch Time");
     }
 
-vic.now = function(arr) {
-  return new Date().getTime();
-    };
 
 
-
-/*Example from Tim, writing random function*/
-var victoria = {};
-
-victoria.random = function(min, max) {
+vic.random = function(min, max) {
     if (max == null) {
       max = min;
       min = 0;
     }
     return min+Math.floor(Math.random() * (max - min + 1));
   };
-
-
-
 
 
 /* Function Size*/
@@ -65,7 +55,6 @@ takes two parameters
 1. a list
 2. a callback, function */
 
-var vic = {};
 var list = ['tim', 'phil', 'bill'];
 
 vic.map = function(list, callback) {
@@ -88,10 +77,10 @@ return [];
 /*_.Object Working in group*/
 
 var ironYard = ["Tim","Wendy","Richard", "Chelsea", "Emory", "Victoria", "John", "Joanna","Max"];
-var age = ["30yrs", "25yrs", "24yrs", "23yrs", "22yrs", "31yrs", "29yrs", "35yrs", "27yrs"];
-var wendy=[];
+var age = ["30yrs", "25yrs", "24yrs", "23yrs", "22yrs", "43yrs", "29yrs", "35yrs", "27yrs"];
+var vic=[];
 
-wendy.object = function( ironYard, age) {
+vic.object = function( ironYard, age) {
     if (ironYard == null) return {};
     var result = {};
 
@@ -109,6 +98,6 @@ wendy.object = function( ironYard, age) {
     return result;
   };
 
-  var w= wendy.object(ironYard,age);
+  var w= vic.object(ironYard,age);
 
   console.log(w);
